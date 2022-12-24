@@ -23,6 +23,7 @@ exports['qb-target']:AddBoxZone("MissionRowDutyClipboard", vector3(441.7989, -98
                 type = "client",
                 event = "Toggle:Duty",
 				icon = "fas fa-sign-in-alt",
+                style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
 				label = "Sign In",
 				job = "police",
 			},
@@ -64,6 +65,7 @@ Config.BoxZones = {
               type = "client",
               event = "Toggle:Duty",
               icon = "fas fa-sign-in-alt",
+              style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
               label = "Sign In",
               job = "police",
             },
@@ -112,6 +114,7 @@ exports['qb-target']:AddTargetModel(Config.Peds, {
 		{
 			event = "request:CuffPed",
 			icon = "fas fa-hands",
+            style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
 			label = "Cuff / Uncuff",
 			item = 'handcuffs',
 			job = "police"
@@ -119,6 +122,7 @@ exports['qb-target']:AddTargetModel(Config.Peds, {
 		{
 			event = "Rob:Player",
 			icon = "fas fa-sack-dollar",
+            style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
             style = "",
 			label = "Rob",
 			canInteract = function(entity)
@@ -146,6 +150,7 @@ Config.TargetModels = {
                 type = "client",
                 event = "request:CuffPed",
                 icon = "fas fa-hands",
+                style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
                 label = "Cuff / Uncuff",
                 item = 'handcuffs',
                 job = "police",
@@ -154,7 +159,7 @@ Config.TargetModels = {
                 type = "client",
                 event = "Rob:Player",
                 icon = "fas fa-sack-dollar",
-                style = "",
+                style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
                 label = "Rob",
                 canInteract = function(entity)
 			if IsPedAPlayer(entity) then 
@@ -180,7 +185,7 @@ exports['qb-target']:AddTargetEntity('mule2', {
             type = "client",
             event = "postop:getPackage",
             icon = "fas fa-box-circle-check",
-            style = "",
+            style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
             label = "Get Package",
             job = "postop",
         },
@@ -200,7 +205,7 @@ Config.TargetEntities = {
                 type = "client",
                 event = "postop:getPackage",
                 icon = "fas fa-box-circle-check",
-                style = "",
+                style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
                 label = "Get Package",
                 job = "postop",
             },
@@ -226,7 +231,7 @@ exports['qb-target']:AddTargetModel(coffee, {
             type = "client",
             event = "coffee:buy",
             icon = "fas fa-coffee",
-            style = "",
+            style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
             label = "Coffee",
             item = "coffee",
             price = 5,
@@ -274,7 +279,7 @@ AddEventHandler('plantpotato',function()
 				type = "client",
 				event = "farming:harvestPlant",
 				icon = "fa-solid fa-scythe",
-                style = "",
+                style = "", --fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;
 				label = "Harvest potato",
 				plant = plant,
 				job = "farmer",
